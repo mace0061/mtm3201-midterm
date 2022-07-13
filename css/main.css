@@ -1,3 +1,97 @@
-body {
-    background-color: bisque;
+html {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+body {
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav {
+    font-size: 2.5em;
+    font-weight: bold;
+ }
+ 
+ nav ul li a{
+    color: gray;
+    background-color: white;
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+ }
+
+ nav ul li a:hover {
+    background-color: rgb(200, 200, 200);
+ }
+
+.wrapper {
+    padding-bottom: 2em;
+}
+
+ .logo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+ }
+
+ .cake {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2em;
+ }
+
+ .content p {
+    font-size: 1.25em;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+ }
+
+ @media screen and (min-width: 760px) {
+    header {
+        padding-bottom: 8em;
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        font-size: 2.5vw;
+    }
+    
+    nav ul li a {
+        float: left;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        border-right: 2px solid gray;
+        padding: 0.5em;
+        width: calc(25% - 1em - 4px);
+        margin: 0;
+        margin-bottom: 2em;
+    }
+
+    .first {
+        border-left: 2px solid gray;
+    }
+
+    .logo, .cake {
+        width: 30%;
+    }
+
+    .content p {
+        width: 50%;
+    }
+ }
