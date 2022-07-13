@@ -61,6 +61,16 @@ nav {
     padding-bottom: 1em;
  }
 
+footer {
+    border-top: 2px solid gray;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+ footer p {
+    margin-left: 25%;
+ }
+
  @media screen and (min-width: 760px) {
     header {
         padding-bottom: 8em;
