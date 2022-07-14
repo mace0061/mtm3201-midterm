@@ -16,6 +16,7 @@ header {
 nav {
     font-size: 2.5em;
     font-weight: bold;
+    z-index: 2;
  }
  
  nav ul li a{
@@ -100,7 +101,8 @@ footer {
     margin-left: 25%;
  }
 
- /* styling for the contact section, including a form */
+ /* below is the styling for the contact page, mostly just a form
+ it arranges it to be easily legible and clickable */
 .contact {
     width: auto;
     background-color: white;
@@ -157,6 +159,29 @@ footer {
     background-color: rgb(200, 200, 200);
 }
 
+
+/* below are all the stylings specific to the products page */
+.productsh1 {
+    font-size: 3em;
+    margin-top: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.items {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 90%;
+    display: block;
+    text-align: center;
+}
+
+.productimage {
+    width: 20%;
+}
+
+/* this is the beginning of media queries
+I'm doing only one media query, at 760px, to differentiate between the mobile and desktop layouts */
  @media screen and (min-width: 760px) {
     header {
         padding-bottom: 8em;
