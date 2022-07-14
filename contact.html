@@ -23,9 +23,15 @@
         <img class="logo" src="images/lifes_sweetness_logo.png" alt="logo">
         <div class="tooltip">
             <picture class="cake">
+                <source srcset="images/gray_960x480.png,
+                                images/gray_1920x960.png 2x,
+                                images/gray_2880x1440.png 3x"
+                media="(min-width: 960px)"/>
+                
                 <source srcset="images/gray_480x240.png,
                                 images/gray_960x480.png 2x,
-                                images/gray_1440x720.png 3x"/>
+                                images/gray_1440x720.png 3x"
+                media="(max-width: 960px)"/>
                 <img
                     src="images/gray_480x240.png"
                     alt="placeholder image for future products">
