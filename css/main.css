@@ -47,17 +47,17 @@ nav {
     margin: 0 auto;
  }
 
- .cake {
+ .cake img {
     width: 50%;
     display: block;
     margin: 0 auto;
     padding-bottom: 2em;
  }
 
- .tooltip {
+ /* .tooltip {
     position: relative;
     display: inline-block;
-  }
+  } */
   
   /* sets the specifics for the tooltip text, including size, color, and opacity 
   also adds a transition property to it so that when its opacity is changed, it happens over 1 second*/
@@ -202,6 +202,24 @@ footer {
 
 .items button:hover {
     background-color: rgb(200, 200, 200);
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1.0)
+    }
+}
+
+.items button:active {
+    color: white;
+    background-color: black;
 }
 
 /* this is the beginning of media queries
