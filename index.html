@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <!-- nav bar at the top of the page, links to home products delivery and contact (delivery has no working link) -->
         <nav>
             <ul>
                 <li><a class="first" href="index.html">Home</a></li>
@@ -20,7 +21,8 @@
         </nav>
     </header>
     <div class="wrapper">
-        <img class="logo" src="images/lifes_sweetness_logo.png" alt="logo">
+        <!-- site title and logo, logo scales with screen sizes (im encountering the strangest bug related to this where it's not properly working with my picture elements, ask me for details if we havent already discussed) -->
+        <h1>Life's <br> Sweetness</h1>
         <div class="tooltip">
             <picture class="cake">
                 <source srcset="images/gray_960x480.png,
@@ -32,12 +34,13 @@
                                 images/gray_960x480.png 2x,
                                 images/gray_1440x720.png 3x"
                 media="(max-width: 960px)"/>
-                <img
+                <img class="testingsomething"
                     src="images/gray_480x240.png"
-                    alt="placeholder image for future products">
+                    alt="placeholder image for the showcase dessert">
             </picture>
             <span class="tooltiptext">Want to see more delicious desserts like this? Go visit our Products page!</span>
         </div>
+        <!-- content of the site, probably about the company or the food they make, all placeholder for now -->
         <div class="content">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ad labore reiciendis consectetur autem quo sunt molestias aliquid odit sit sequi repellendus sapiente debitis, maiores excepturi voluptatum, doloremque corrupti facere.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea blanditiis iste corporis unde. Expedita a repudiandae animi dolorem quaerat aut libero, minus natus, voluptas vero reprehenderit, mollitia quae officia?</p>

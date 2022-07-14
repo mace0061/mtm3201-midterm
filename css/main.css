@@ -18,7 +18,7 @@ nav {
     font-weight: bold;
     z-index: 2;
  }
- 
+ /* makes the nav appear in a vertical set of several rows */
  nav ul li a{
     color: gray;
     background-color: white;
@@ -33,19 +33,23 @@ nav {
     border-bottom: 2px solid gray;
  }
 
+ /* each button changes color when hovered */
  nav ul li a:hover {
     background-color: rgb(200, 200, 200);
  }
 
 .wrapper {
+    width: 90%;
     padding-bottom: 2em;
+    margin: 0 auto;
 }
 
- .logo {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
- }
+.wrapper h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
 
  .cake img {
     width: 50%;
@@ -53,11 +57,6 @@ nav {
     margin: 0 auto;
     padding-bottom: 2em;
  }
-
- /* .tooltip {
-    position: relative;
-    display: inline-block;
-  } */
   
   /* sets the specifics for the tooltip text, including size, color, and opacity 
   also adds a transition property to it so that when its opacity is changed, it happens over 1 second*/
@@ -72,8 +71,8 @@ nav {
     padding: 5px 0;
     border-radius: 6px;
     position: absolute;
-    top: 25%;
-    left: 70%;
+    top: 50%;
+    left: 80%;
     transform: translate(-50%, 0%);
     z-index: 1;
   }
@@ -160,8 +159,9 @@ footer {
 }
 
 
-/* below are all the stylings specific to the products page */
-.productsh1 {
+/* below are all the stylings specific to the products page 
+by default they appear one after the other in their own sections, row by row*/
+.productsh2 {
     font-size: 2.5em;
     margin-top: 1em;
     font-weight: bold;
@@ -184,10 +184,14 @@ footer {
 }
 
 .items h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     text-decoration: underline;
     font-weight: bold;
     margin-bottom: 0.5em;
+}
+
+.items p {
+    font-size: 1.5em;
 }
 
 .items button {
@@ -197,9 +201,9 @@ footer {
     color: black;
     background-color: white;
     border: 2px solid gray;
-    font-size: 1.5em;
+    font-size: 2em;
 }
-
+/* button will animate when hovered, growing and shrinking repeatedly every second */
 .items button:hover {
     background-color: rgb(200, 200, 200);
     animation-name: grow;
@@ -216,7 +220,7 @@ footer {
         transform: scale(1.0)
     }
 }
-
+/* while active the button inverts colors */
 .items button:active {
     color: white;
     background-color: black;
@@ -234,7 +238,7 @@ I'm doing only one media query, at 760px, to differentiate between the mobile an
         width: 100%;
         font-size: 2.5vw;
     }
-    
+    /* the nav is all put on one single row the spans the width of the screen and follows you down as you scroll down, fixed in view */
     nav ul li a {
         float: left;
         border-top: 2px solid gray;
@@ -258,7 +262,8 @@ I'm doing only one media query, at 760px, to differentiate between the mobile an
         width: 50%;
     }
 
-    /* changes specific to the products page at 760 or higher screen width */
+    /* changes specific to the products page at 760 or higher screen width
+    arranges them in a grid with 2 "items" per row, making a total of 3 rows */
     .items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
