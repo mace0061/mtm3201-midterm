@@ -21,8 +21,34 @@
     </header>
     <div class="wrapper">
         <img class="logo" src="images/lifes_sweetness_logo.png" alt="logo">
-        <img class="cake" src="images/main_page_cake.jpg" alt="cake">
-        <h1>Contact</h1>
+        <div class="tooltip">
+            <img class="cake" src="images/main_page_cake.jpg" alt="cake">
+            <span class="tooltiptext">Want to see more delicious desserts like this? Go visit our Products page!</span>
+        </div>
+        
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <div class="send-message">
+                <h3>Send us a message</h3>
+                <form action="#" method="get">
+                    <div>
+                        <h4>Full Name</h4>
+                        <input type="text" id="fullname" name="fullname" placeholder="">
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <input type="text" id="email" name="email" placeholder="">
+                    </div>
+                    <div class="msgbox">
+                        <h4>Message</h4>
+                        <textarea id="message" name="message" placeholder=""></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <footer>
         <p>&copy; Copyright Morrison MacEachern, 2022</p>

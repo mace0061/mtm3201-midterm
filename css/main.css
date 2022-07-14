@@ -53,6 +53,35 @@ nav {
     padding-bottom: 2em;
  }
 
+ .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* sets the specifics for the tooltip text, including size, color, and opacity 
+  also adds a transition property to it so that when its opacity is changed, it happens over 1 second*/
+  .tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+  }
+  
+  /* when the user hovers over the tooltip container, the tooltiptext will become visible */
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+  }
+
  .content p {
     font-size: 1.25em;
     display: block;
@@ -70,6 +99,63 @@ footer {
  footer p {
     margin-left: 25%;
  }
+
+ /* styling for the contact section, including a form */
+.contact {
+    width: auto;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.contact h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.contact h3 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.contact h4 {
+    font-size: 2.25em;
+    margin-bottom: 0.35em;
+    margin-top: 0.5em;
+}
+
+.contact input {
+    width: calc(100% - 6px);
+    height: 3em;
+    border: 1px solid gray;
+    font-size: 1em;
+}
+
+.msgbox textarea {
+    resize: none;
+    height: 12em;
+    width: calc(100% - 6px);
+    border: 1px solid gray;
+    font-size: 1.5em;
+    padding: 2px;
+}
+
+.contact button {
+    margin-top: 0.5em;
+    width: 4em;
+    height: 1.5em;
+    color: black;
+    background-color: white;
+    border: 2px solid gray;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.contact button:hover {
+    background-color: rgb(200, 200, 200);
+}
 
  @media screen and (min-width: 760px) {
     header {
